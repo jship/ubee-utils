@@ -1,0 +1,26 @@
+name:                ubee-utils
+version:             0.1.0.0
+synopsis:            Utility for interacting with Ubee routers.
+description:         Utility for interacting with Ubee routers.
+homepage:            https://github.com/jship/ubee-utils#readme
+github:              jship/ubee-utils
+license:             BSD3
+author:              Jason Shipman
+maintainer:          jasonpshipman@gmail.com
+copyright:           2017 (C) Jason Shipman
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - bytestring
+  - http-conduit
+  - http-types
+  - optparse-applicative
+  - optparse-generic
+
+executables:
+  ubee-utils:
+    source-dirs:      src
+    main:             Main.hs
